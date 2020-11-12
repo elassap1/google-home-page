@@ -1,0 +1,129 @@
+*{
+  margin: 0;
+}
+html,body{
+  font-weight: 100;
+  font-size: 15px;
+  position: relative;
+  height:100%;margin:0;padding:0
+}
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+}
+header > a{
+  width: 40px;
+  margin-top: 30px;
+  margin-right: 15px;
+  color: rgb(99, 97, 97);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+.rec{
+  width: 21px;
+  height: 21px;
+  margin: 25px 20px 0px -2px;
+  opacity: 1;
+}
+.rec div{
+  display: flex;
+  width: 21px;
+  height: 7px;
+}
+
+.rec > div > div{
+  background-color: rgb(128, 128, 128);
+  width: 5px;
+  height: 5px;
+  margin: 4px 2px 1px 1px;
+}
+
+.empty{
+  background-color: indigo;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  color: aliceblue;
+  margin: 20px 10px 0px 0px;
+}
+section{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin: 8% 0% 0% 0%;
+  display: block;
+}
+
+[alt="google"]{
+  width: 270px;
+  margin-bottom: 10px;
+}
+[alt="search"]{
+  position: absolute;
+  margin: -50px 10px 10px -280px;
+  opacity: 0.3;
+}
+[alt="vioce"]{
+  position: absolute;
+  margin: -50px 0px 0px 260px;
+}
+
+[type="text"]{
+width: 550px;
+height: 40px;
+border: 1px solid rgb(128, 128, 128, 0.3);
+border-radius: 30px;
+padding-left: 45px;
+margin: 20px 0px 20px 0px;
+}
+
+[type="text"]:hover, [type="text"]:focus, button:hover{
+  box-shadow: 1px 1px 14px -6px grey;
+  outline: 0;
+}
+div > button{
+  font-weight: 400;
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  margin:  10px 10px 20px 10px;
+  border: 1px solid rgb(128, 128, 128, 0);
+  background-color: rgb(232 229 229 / 30%);
+}
+
+a{
+  text-decoration: none;
+
+}
+
+
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(191 191 191 / 30%);
+}
+footer > div{
+  border: 1px solid rgb(128, 128, 128, 0.3);
+  padding: 9px 12px 12px 27px;
+  color: rgba(0,0,0,.54);
+}
+nav {
+  display: flex;
+  opacity: .6;
+
+}
+nav > a{
+  padding: 9px 12px 12px 27px;
+    color: rgba(0,0,0,.54);
+}
+nav:nth-child(7){
+float: right;
+}
