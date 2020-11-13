@@ -10,19 +10,19 @@ html,body{
 header {
   width: 100%;
   height: 100px;
-  display: flex;
+  display: inline-flex;
   justify-content: flex-end;
 }
-header > a{
+header > .a1{
   width: 40px;
-  margin-top: 30px;
+  margin-top: 28px;
   margin-right: 15px;
   color: rgb(99, 97, 97);
   text-decoration: none;
   font-size: 14px;
 }
 
-a:hover{
+header a:hover{
   text-decoration: underline;
 }
 .rec{
@@ -50,8 +50,28 @@ a:hover{
   width: 34px;
   height: 34px;
   color: aliceblue;
-  margin: 20px 10px 0px 0px;
+  margin: 18px 10px 0px 0px;
 }
+header button{
+  background-color: #fff;
+  outline: 0;
+  margin: 10px 10px 10px 10px;
+  position: absolute;
+  z-index: -1;
+  
+}
+.b1{
+  margin:  20px 60px 10px 10px;
+  height: 30px;
+  width: 30px;
+}
+.b2{
+  margin:  20px 12px 10px 10px;
+  height: 30px;
+  width: 30px;
+}
+
+/*end header*/
 section{
   position: absolute;
   width: 100%;
@@ -71,7 +91,7 @@ section{
 }
 [alt="vioce"]{
   position: absolute;
-  margin: -50px 0px 0px 260px;
+  margin: -52px 0px 0px 260px;
 }
 
 [type="text"]{
@@ -95,14 +115,14 @@ div > button{
   margin:  10px 10px 20px 10px;
   border: 1px solid rgb(128, 128, 128, 0);
   background-color: rgb(232 229 229 / 30%);
+  outline: 0;
 }
 
 a{
   text-decoration: none;
-
 }
 
-
+/*end section*/
 footer{
   position: absolute;
   bottom: 0;
@@ -112,18 +132,21 @@ footer{
 }
 footer > div{
   border: 1px solid rgb(128, 128, 128, 0.3);
-  padding: 9px 12px 12px 27px;
+  padding: 11px 12px 12px 27px;
   color: rgba(0,0,0,.54);
 }
-nav {
+footer nav {
   display: flex;
   opacity: .6;
-
+  float: left;
 }
 nav > a{
   padding: 9px 12px 12px 27px;
     color: rgba(0,0,0,.54);
 }
-nav:nth-child(7){
-float: right;
+nav a:hover{
+  text-decoration: underline;
+}
+nav a:nth-child(4){
+  float: right;
 }
