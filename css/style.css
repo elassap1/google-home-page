@@ -1,6 +1,10 @@
 *{
   margin: 0;
 }
+a{
+  color: rgb(74, 74, 75);
+  padding: 0px 10px;
+}
 html,body{
   height: 100%;
   font-weight: 100;
@@ -21,7 +25,7 @@ header > a:nth-of-type(1),a:nth-of-type(2){
   color: rgb(99, 97, 97);
   text-decoration: none;
   font-size: 14px;
-  margin: 15px 5px 0px 0px;
+  margin: 15px 0px 0px 0px;
 }
 
 header > div:nth-of-type(1){
@@ -116,6 +120,8 @@ footer{
   bottom: 0%;
   width: 100%;
   background-color: rgb(191 191 191 / 30%);
+  align-items: center;
+  color: rgba(65, 66, 65, 0.54);
 }
 footer > div{
   border: 1px solid rgb(128, 128, 128, 0.3);
@@ -123,20 +129,16 @@ footer > div{
   color: rgba(0,0,0,.54);
   padding-left: 50px;
 }
+
 footer nav{
   padding: 10px 20px;
   opacity: .8;
+  color: rgba(65, 66, 65, 0.54);
 }
-nav > a,nav div {
-  display: inline;
-  padding: 0px 10px 0px 10px;
-  color: rgba(0,0,0,.54);
-}
-nav > div > a{
+
+nav  div {
   flex-direction: row-reverse;
   float: right;
-  padding: 0px 20px 0px 0px;
-  color: rgba(0,0,0,.54);
 }
 nav a:hover{
   text-decoration: underline;
