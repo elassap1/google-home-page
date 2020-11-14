@@ -2,24 +2,34 @@
   margin: 0;
 }
 html,body{
+  height: 100%;
   font-weight: 100;
   font-size: 15px;
-  position: relative;
-  height:100%;margin:0;padding:0
+  margin:0;padding:0
 }
 header {
-  width: 100%;
-  height: 100px;
-  display: inline-flex;
-  justify-content: flex-end;
+  height: 50px;
+  position: absolute;
+  top: 0%;
+  right: 10px;
+  display: flex;
+  margin: 10px;
 }
-header > .a1{
+
+header > a:nth-of-type(1),a:nth-of-type(2){
   width: 40px;
-  margin-top: 28px;
-  margin-right: 15px;
   color: rgb(99, 97, 97);
   text-decoration: none;
   font-size: 14px;
+  margin: 15px 5px 0px 0px;
+}
+
+header > div:nth-of-type(1){
+  margin: 12px 0px 0px 10px;
+}
+
+header > div:nth-of-type(2){
+  margin: 8px 0px 0px 15px;
 }
 
 header a:hover{
@@ -28,56 +38,34 @@ header a:hover{
 .rec{
   width: 21px;
   height: 21px;
-  margin: 25px 20px 0px -2px;
   opacity: 1;
-}
-.rec div{
-  display: flex;
-  width: 21px;
-  height: 7px;
-}
-
-.rec > div > div{
-  background-color: rgb(128, 128, 128);
-  width: 5px;
-  height: 5px;
-  margin: 4px 2px 1px 1px;
 }
 
 .empty{
-  background-color: indigo;
   border-radius: 50%;
-  width: 34px;
-  height: 34px;
+  width: 30px;
+  height: 30px;
   color: aliceblue;
-  margin: 18px 10px 0px 0px;
+  margin: auto;
 }
 header button{
   background-color: #fff;
   outline: 0;
-  margin: 10px 10px 10px 10px;
   position: absolute;
   z-index: -1;
   
 }
-.b1{
-  margin:  20px 60px 10px 10px;
-  height: 30px;
-  width: 30px;
-}
-.b2{
-  margin:  20px 12px 10px 10px;
-  height: 30px;
-  width: 30px;
-}
+
 
 /*end header*/
 section{
   position: absolute;
   width: 100%;
+  min-height: 100%;
+}
+section > div{
+  margin: 20% auto;
   text-align: center;
-  margin: 8% 0% 0% 0%;
-  display: block;
 }
 
 [alt="google"]{
@@ -125,28 +113,31 @@ a{
 /*end section*/
 footer{
   position: absolute;
-  bottom: 0;
+  bottom: 0%;
   width: 100%;
-  height: 80px;
   background-color: rgb(191 191 191 / 30%);
 }
 footer > div{
   border: 1px solid rgb(128, 128, 128, 0.3);
-  padding: 11px 12px 12px 27px;
+  padding: 10px 0px 10px 0px;
+  color: rgba(0,0,0,.54);
+  padding-left: 50px;
+}
+footer nav{
+  padding: 10px 20px;
+  opacity: .8;
+}
+nav > a,nav div {
+  display: inline;
+  padding: 0px 10px 0px 10px;
   color: rgba(0,0,0,.54);
 }
-footer nav {
-  display: flex;
-  opacity: .6;
-  float: left;
-}
-nav > a{
-  padding: 9px 12px 12px 27px;
-    color: rgba(0,0,0,.54);
+nav > div > a{
+  flex-direction: row-reverse;
+  float: right;
+  padding: 0px 20px 0px 0px;
+  color: rgba(0,0,0,.54);
 }
 nav a:hover{
   text-decoration: underline;
-}
-nav a:nth-child(4){
-  float: right;
 }
